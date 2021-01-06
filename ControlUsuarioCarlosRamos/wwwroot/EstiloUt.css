@@ -1,0 +1,87 @@
+html {
+   
+    font-family: 'Aharoni';
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+input[type=text], input[type=email], input[type=password], input[type=number] {
+    background-color: white;
+    color: darkblue;
+    font-size: 20px;
+    font-family: 'Aharoni';
+    padding: 3px;
+    margin: 5px;
+    width: 300px;
+}
+footer {
+    background-color: white;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    color: darkgoldenrod;
+    border-radius: 15px;
+    margin:auto;
+   width:700px;
+
+}
+body {
+    width: 100%;
+    background-image: url(Images/Ut.png);
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+h1, h2 {
+    color: darkgoldenrod;
+    font-weight: bolder;
+}
+header {
+    background-color: white;
+}
+    header section {
+        text-align: right;
+        float: right;
+        margin-right: 30px;
+    
+    }
+#logo {
+    width: 5000px;
+    margin-top: 10px;
+    align-content:center;
+}
+a {
+    color: crimson;
+    font-size: 20px;
+    margin: 5px;
+}
+main {
+    text-align: center;
+    background-color: white;
+    margin: 100px auto;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    border-radius: 15px;
+    width:700px;
+    align-content:center;
+}
+table {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+input[type=submit] {
+    background-color: crimson  ;
+    color: white;
+    font-size: 20px;
+    font-family: 'Aharoni';
+    padding: 3px;
+    cursor: pointer;
+    margin: 5px;
+}
+p, label {
+    font-size: 20px;
+    margin: 5px;
+}
+
+
+

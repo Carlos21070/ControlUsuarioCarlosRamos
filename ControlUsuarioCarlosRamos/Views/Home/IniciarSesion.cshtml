@@ -1,0 +1,26 @@
+﻿
+@model ControlUsuarioCarlosRamos.Models.Usuario
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{ Layout = "_Layout"; }
+
+<body background="Images/Ut.png">
+    <h1>INICIA SESIÓN:</h1><br>
+    <h1>UltimateFut</h1>
+    <p>
+        Adquiere nuestra membresia.
+    </p>
+    <a  href="~/Home/Registrar">Regístrate</a>
+    <form method="post" action="~/Home/IniciarSesion">
+        <input type="email" asp-for="Correo" placeholder="Correo UTfut" required />
+        <br />
+        <input type="password" asp-for="Contrasena" placeholder="Contraseña UTfut" required />
+        <br />
+        <input type="checkbox" id="mantener" name="mantener" value="true" />
+        <label for="mantener">Quedate conectado y vive la experiencia.</label>
+        <br />
+        <input type="submit" value="Acceder" />
+        <br />
+    </form>
+    @Html.ValidationSummary()
+    <a href="~/Home/RecuperarContra">¿Olvidaste tu contraseña UTfut?</a>
+</body>

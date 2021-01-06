@@ -1,0 +1,33 @@
+﻿
+@{
+    Layout = "_Layout";
+}
+
+<main>
+    <table>
+        <tr>
+            <td>
+                <section>
+                    <h1>Datos UltimateFut</h1>
+                    <label>Usuario UTfut: </label>
+                    <label>@User.Claims.FirstOrDefault(x => x.Type == "Nombre").Value</label>
+                    <br />
+                    <label>Correo electrónico: </label>
+                    <label>@User.Claims.FirstOrDefault(x => x.Type == "Correo").Value</label>
+                </section>
+            </td>
+            <td>
+                <section>
+                    <h2>Opciones</h2>
+                    <a href="~/Home/CambiarContra">Cambiar contraseña UTfut</a>
+                    <br />
+                    <br />
+                    <a href="~/Home/CerrarSesion">Cerrar sesión UTfut</a>
+                    <br />
+                    <br />
+                    <a href="~/Home/EliminarCuenta">Eliminar cuenta UTfut</a>
+                </section>
+            </td>
+        </tr>
+    </table>
+</main>

@@ -1,0 +1,22 @@
+﻿@model ControlUsuarioCarlosRamos.Models.Usuario
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{ Layout = "_Layout"; }
+
+<main>
+    <a href="~/Home/IniciarSesion">
+        Regresar al inicio UltimateFut
+    </a>
+    <h1>Recuperar contraseña UltimateFut</h1>
+    <p>
+        Para recuperar su contraseña UTfut, Es necesario
+        <br />
+        El Correo UTfut que registró con nosotros.
+        <br />
+        Le envíaremos un correo donde se le explicará como recuperar su contraseña.
+    </p>
+    <form method="post" action="~/Home/RecuperarContra">
+        <input type="email" name="correo" placeholder="Correo UTfut" required />
+        <br />
+        <input type="submit" value="Enviar correo" />
+    </form>
+</main>
